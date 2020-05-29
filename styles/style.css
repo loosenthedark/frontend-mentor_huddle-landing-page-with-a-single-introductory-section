@@ -11,10 +11,11 @@ body {
   background-color: hsl(257, 40%, 49%);
   background-image: url('../images/bg-mobile.svg');
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   font-size: 100%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  line-height: 1.3;
   margin: 35px 7% 30px;
   padding: 0;
   color: white;
@@ -35,7 +36,68 @@ h1 {
   background-size: contain;
 }
 
+header {
+  margin-bottom: 47px;
+}
+
 main {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.hero-image img {
+  width: 96%;
+  margin-left: 2%;
+  max-width: 450px;
+}
+
+.hero-image {
+  margin-bottom: 58px;
+}
+
+.hero-heading {
+  font-size: 1.45em;
+  font-weight: 700;
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.hero-blurb {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto 20px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.cta-btn {
+  display: block;
+  text-align: center;
+  width: 210px;
+  margin: 0 auto;
+  /* max-width: 200px; */
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 25px;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  font-size: 13px;
+  margin: 0 auto;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 5px 5px 10px purple;
+  /* opacity: 0.8; */
+}
+
+.cta-btn:hover {
+  background-color: #00bbfa;
+  color: white;
+  font-weight: 700;
 }
