@@ -135,7 +135,7 @@ main {
   color: #00bbfa;
 }
 
-.social-links div:not(:last-child) {
+.social-links a:not(:last-child) {
   margin-right: 12px;
 }
 
