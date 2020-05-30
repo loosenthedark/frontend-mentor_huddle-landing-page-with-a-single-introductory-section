@@ -201,6 +201,7 @@ main {
 @media only screen and (min-width: 600px) {
   .social-links {
     justify-content: flex-end;
+    margin-bottom: 30px;
   }
 }
 
