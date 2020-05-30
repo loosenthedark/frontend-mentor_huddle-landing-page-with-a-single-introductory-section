@@ -21,6 +21,15 @@ body {
   color: white;
 }
 
+@media only screen and (min-width: 600px) {
+  body {
+    background-image: url('../images/bg-desktop.svg');
+    margin-top: 50px;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -36,8 +45,24 @@ h1 {
   background-size: contain;
 }
 
+@media only screen and (min-width: 600px) {
+  h1 {
+    display: block;
+    width: 210px;
+    height: 100px;
+    background-size: contain;
+    margin-left: -5px;
+  }
+}
+
 header {
   margin-bottom: 47px;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    margin-bottom: 15px;
+  }
 }
 
 main {
@@ -46,14 +71,40 @@ main {
   margin-bottom: 56px;
 }
 
+@media only screen and (min-width: 600px) {
+  main {
+    flex-direction: row;
+    margin-bottom: 15px;
+  }
+}
+
+.hero-image {
+  margin-bottom: 58px;
+  flex: 3;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-image {
+    margin-bottom: 0;
+  }
+}
+
 .hero-image img {
   width: 96%;
   margin-left: 2%;
   max-width: 450px;
 }
 
-.hero-image {
-  margin-bottom: 58px;
+@media only screen and (min-width: 600px) {
+  .hero-image img {
+    max-width: 660px;
+    height: 75vh;
+    margin-left: 10px;
+  }
+}
+
+.hero-text {
+  flex: 2;
 }
 
 .hero-heading {
@@ -66,6 +117,14 @@ main {
   margin-bottom: 15px;
 }
 
+@media only screen and (min-width: 600px) {
+  .hero-heading {
+    margin: 45px 80px 20px 10px;
+    font-size: 2.3em;
+    line-height: 1.45;
+  }
+}
+
 .hero-blurb {
   text-align: center;
   max-width: 300px;
@@ -74,6 +133,20 @@ main {
   color: white;
   line-height: 1.5;
   opacity: 0.8;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-blurb {
+    margin-left: 10px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-heading, .hero-blurb {
+    text-align: left;
+    max-width: 460px;
+  }
 }
 
 .cta-btn {
@@ -96,14 +169,27 @@ main {
   /* opacity: 0.8; */
 }
 
-.cta-btn:hover {
+@media only screen and (min-width: 600px) {
+  .cta-btn {
+    margin-left: 10px;
+    width: 180px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+  }
+}
+
+.cta-btn:hover, .cta-btn:active {
   background-color: #00bbfa;
   color: white;
   font-weight: 700;
+  box-shadow: 0px 0px 15px purple;
 }
 
 .cta-btn:active {
   transform: scale(.97);
+  /* transform: translateX(10px); */
+  transition: transform 300ms ease-in-out;
 }
 
 .social-links {
@@ -112,12 +198,25 @@ main {
   justify-content: center;
 }
 
+@media only screen and (min-width: 600px) {
+  .social-links {
+    justify-content: flex-end;
+  }
+}
+
 .social-links div {
-  width: 27px;
-  height: 27px;
+  width: 35px;
+  height: 35px;
   border: 1px solid white;
   border-radius: 50%;
   color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .social-links div {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .social-links a {
@@ -140,19 +239,29 @@ main {
 }
 
 .fab {
-  padding-left: 5px;
-  padding-top: 4px;
-  color: white;
+  /* padding-left: 5px; */
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.fa-facebook-f {
-  padding-left: 7px;
+@media only screen and (min-width: 600px) {
+  .fab {
+    padding-top: 10px;
+  }
 }
 
 .fa-instagram {
-  padding-left: 6px;
+  padding-top: 9px;
 }
 
 .fa-twitter {
-  padding-top: 5px;
+  padding-top: 9px;
+}
+
+@media only screen and (min-width: 600px) {
+  .fa-instagram, .fa-twitter {
+    padding-top: 11px;
+  }
 }
